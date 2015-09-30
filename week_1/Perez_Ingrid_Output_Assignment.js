@@ -16,7 +16,7 @@ ariaAge =("8 months old"); //defines variable
 hasDaughters =("true"); //defines variable
 numDaughters =2;
 
-// outputs  I have 2 beautiful daughter's. Kairi and Aria, Kairi is 2 years old and aria is going to be 8 months old soon.
+// outputs  I have 2 beautiful daughters. Kairi and Aria, Kairi is 2 years old and aria is going to be 8 months old soon.
 output =" I have " + numDaughters + " beautiful daughters. " + myDaughters + ", Kairi is " + kairiAge + " and Aria is going to be " + ariaAge + " soon.";
 
 
