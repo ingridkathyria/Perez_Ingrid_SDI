@@ -17,7 +17,7 @@ hasDaughters =("true"); //defines variable
 numDaughters =2;
 
 // outputs  I have 2 beautiful daughter's. Kairi and Aria, Kairi is 2 years old and aria is going to be 8 months old soon.
-output =" I have " + numDaughters + " beautiful daughters. " + myDaughters + ", Kairi is" + kairiAge + "and aria is going to be" + ariaAge + "soon.";
+output =" I have " + numDaughters + " beautiful daughters. " + myDaughters + ", Kairi is " + kairiAge + " and Aria is going to be " + ariaAge + " soon.";
 
 
 console.log (output);
