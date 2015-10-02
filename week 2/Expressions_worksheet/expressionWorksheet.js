@@ -14,5 +14,5 @@ var humanYears = 1;
 var dogYears = 7;
 var sparkysAge = humanYears * dogYears;
 
-//Sparky is x human years old which is x in dog years.
-console.log ("Sparky is " + humanYears + " human years old which is "+sparkysAge + " in dog years.");
+//Sparky is x human year old which is x in dog years.
+console.log ("Sparky is " + humanYears + " human year old which is "+ dogYears + " in dog years. In three years, Sparky will be "+ sparkysAge+ ".");
