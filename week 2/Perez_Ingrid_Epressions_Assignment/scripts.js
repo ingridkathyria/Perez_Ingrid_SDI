@@ -4,7 +4,7 @@
 
 
 //Calculate how old is Sparky the pitbull in dog years based on his actual age.
-
+/*
 var result;
 var humanYears;
 var dogYears;
@@ -18,3 +18,4 @@ sparkysAge = humanYears * dogYears;
 //result = "Sparky is " + humanYears + " human year old which is " + dogYears + " in dog years. So in three years, Sparky will be " + sparkysAge * 3 + "."";
 result = " Sparky is "+ humanYears + " human year old which is " + dogYears + " in dog years. So in three years, Sparky will be " + sparkysAge * 3 + ".";
 console.log(result);
+*/
