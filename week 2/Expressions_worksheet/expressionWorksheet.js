@@ -5,7 +5,7 @@
 
 //Calculate how old is Sparky the pitbull in dog years based on his actual age.
 /*
-var result;
+var result; //declared variable
 var humanYears;
 var dogYears;
 var sparkysAge;
@@ -21,16 +21,21 @@ console.log(result);
 */
 
 // Create an expression that calculates how much pizza each partygoer will get at the party.
-
+/*
 var pizzaSlices;
 var peopleAtPart;
 var numPizzas;
 var slicesPerPerson;
+var result;
 
 pizzaSlices = 8;
 peopleAtParty = 10;
 numPizzas = 4;
 slicesPerPerson = (pizzaSlices * numPizzas)/peopleAtParty;
 
+//“Each person ate X slices of pizza at the party.”
+result = " Each person ate " + slicesPerPerson + " slices of pizza at the party.";
+console.log(result);
+*/
 
-
+//
