@@ -21,7 +21,7 @@ console.log(result);
 */
 
 // Create an expression that calculates how much pizza each partygoer will get at the party.
-/*
+
 var pizzaSlices;
 var peopleAtPart;
 var numPizzas;
@@ -36,6 +36,9 @@ slicesPerPerson = (pizzaSlices * numPizzas)/peopleAtParty;
 //“Each person ate X slices of pizza at the party.”
 result = " Each person ate " + slicesPerPerson + " slices of pizza at the party.";
 console.log(result);
-*/
 
-//
+
+//Assume guests get whole slices, how many whole slices will Sparky feast on?
+
+var sparkySlices;
+
