@@ -44,3 +44,7 @@ var sparkySlices;
 
 
 
+//“Sparky got X slices of pizza.”
+console.log
+
+
