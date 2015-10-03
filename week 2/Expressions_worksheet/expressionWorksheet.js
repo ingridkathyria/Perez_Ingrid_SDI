@@ -21,30 +21,48 @@ console.log(result);
 */
 
 // Create an expression that calculates how much pizza each partygoer will get at the party.
-
+/*
 var pizzaSlices;//declared variable
-var peopleAtPart;//declared variable
+var peopleAtParty;//declared variable
 var numPizzas;//declared variable
 var slicesPerPerson;//declared variable
 var result;//declared variable
 
 pizzaSlices = 8;//assigned variable
-peopleAtParty = 10;// ass
-numPizzas = 4;
+peopleAtParty = 10;// assigned variables
+numPizzas = 4;//assigned variables
 slicesPerPerson = (pizzaSlices * numPizzas)/peopleAtParty;
 
 //“Each person ate X slices of pizza at the party.”
+
 result = " Each person ate " + slicesPerPerson + " slices of pizza at the party.";
 console.log(result);
 
 
 //Assume guests get whole slices, how many whole slices will Sparky feast on?
 
-var sparkySlices;
+var sparkySlices;//declared variable
+sparkySlices = (pizzaSlices * numPizzas ) % peopleAtParty;
+
 
 
 
 //“Sparky got X slices of pizza.”
-console.log
+console.log("Sparky got " + sparkySlices + " slices of pizza.");
+*/
+/*
+// Create an expression that will use the items in the array to calculate the average amount spent on groceries.
 
+var weeklyTotals;
+var totalSpent;
+var averageWeekly;
 
+weeklyTotals = [25, 45, 40, 38, 50];
+totalSpent = 25 + 45 + 40 + 38 + 50;
+averageWeekly = totalSpent / 5;
+
+//“You have spent a total of $X on groceries over 5 weeks. That is an average of $X per week”
+console.log("You have spent a total of $" + totalSpent + " on groceries over 5 weeks. That is an average of $" + averageWeekly + " per week.")
+*/
+
+// Create an expression that will calculate the discounted price with and without sales tax. 
