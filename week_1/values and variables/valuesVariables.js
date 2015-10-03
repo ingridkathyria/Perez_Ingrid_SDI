@@ -12,3 +12,4 @@ var age = 35;//number variable
 
 var yearOFBirth = 1980;
 var isStudent = true;
+var firstName = "Ingrid";
