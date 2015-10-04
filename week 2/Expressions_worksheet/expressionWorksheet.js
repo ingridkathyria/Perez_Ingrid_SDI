@@ -65,4 +65,19 @@ averageWeekly = totalSpent / 5;
 console.log("You have spent a total of $" + totalSpent + " on groceries over 5 weeks. That is an average of $" + averageWeekly + " per week.")
 */
 
-// Create an expression that will calculate the discounted price with and without sales tax. 
+// Create an expression that will calculate the discounted price with and without sales tax.
+
+var originalPrice;
+var discountPercent;
+var decriptionItem;
+var sales TaxPercent;
+var priceOFItemWithTax;
+var priceOFItemWithoutTax;
+
+originalPrice = 5;
+discountPercent = 10;
+descriptionItem = "nail polish";
+salesTaxPercent = 0.06;
+priceOFItemWithTax = originalPrice * salesTaxPercent;
+
+
