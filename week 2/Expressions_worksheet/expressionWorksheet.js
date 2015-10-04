@@ -77,14 +77,14 @@ var itemAfterDiscount;
 var result;
 
 originalPrice = 5;
-discountPercent = 0.10;
-item = "nail polish";
+discountPercent = 10;
+item = "shoes";
 salesTax = 0.06;
 itemDiscount =  originalPrice * discountPercent;
-taxedItem = salesTax * itemAfterDiscount;
-priceItemTax = originalPrice + salesT;
 itemAfterDiscount = originalPrice - itemDiscount;
-result = "Your " + item  +" was originally $" + originalPrice +", but after a " + discountPercent +  "% discount, it is now $" + itemAfterDiscount + " without tax, and $" + priceItemTax  + " with tax.”;
+taxedItem = salesTax * itemAfterDiscount;
+priceItemTax = originalPrice + salesTax;
 
-//“Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
+result = "Your " + item + " was originally $" + originalPrice + " but after a " + discountPercent + "% discount, it is now $"
+//“Your shoes was originally $5, but after a 10% discount, it is now $X without tax, and $X with tax.”
 console.log(result);
