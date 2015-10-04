@@ -14,11 +14,11 @@ humanYears = 1;//assigned var
 dogYears = 7;//assigned variable
 sparkysAge = humanYears * dogYears;//assigned variable
 
-
 //result = "Sparky is " + humanYears + " human year old which is " + dogYears + " in dog years. So in three years, Sparky will be " + sparkysAge * 3 + "."";
 result = " Sparky is "+ humanYears + " human year old which is " + dogYears + " in dog years. So in three years, Sparky will be " + sparkysAge * 3 + ".";
 console.log(result);
 */
+
 
 // Create an expression that calculates how much pizza each partygoer will get at the party.
 /*
@@ -44,9 +44,6 @@ console.log(result);
 var sparkySlices;//declared variable
 sparkySlices = (pizzaSlices * numPizzas ) % peopleAtParty;
 
-
-
-
 //“Sparky got X slices of pizza.”
 console.log("Sparky got " + sparkySlices + " slices of pizza.");
 */
@@ -65,19 +62,24 @@ averageWeekly = totalSpent / 5;
 console.log("You have spent a total of $" + totalSpent + " on groceries over 5 weeks. That is an average of $" + averageWeekly + " per week.")
 */
 
+
+
 // Create an expression that will calculate the discounted price with and without sales tax.
 
 var originalPrice;
 var discountPercent;
 var decriptionItem;
-var sales TaxPercent;
-var priceOFItemWithTax;
-var priceOFItemWithoutTax;
-
+var sales Tax;
+var priceOFItemTax;
+var priceItemNoTax;
+var itemDiscounted;
+var taxedItem;
 originalPrice = 5;
 discountPercent = 0.10;
 descriptionItem = "nail polish";
-salesTaxPercent = 0.06;
-priceOFItemWithTax = originalPrice * salesTaxPercent;
+salesTax = 0.06;
+itemDiscounted = originalPrice * discountPercent;
+taxedItem = salesTax * original price;
+priceOFItemTax = originalPrice * salesTaxPercent;
 
 
