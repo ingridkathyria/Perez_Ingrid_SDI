@@ -68,18 +68,23 @@ console.log("You have spent a total of $" + totalSpent + " on groceries over 5 w
 
 var originalPrice;
 var discountPercent;
-var decriptionItem;
-var sales Tax;
-var priceOFItemTax;
-var priceItemNoTax;
-var itemDiscounted;
+var item;
+var salesTax;
+var itemDiscount;
 var taxedItem;
+var priceItemTax;
+var itemAfterDiscount;
+var result;
+
 originalPrice = 5;
 discountPercent = 0.10;
-descriptionItem = "nail polish";
+item = "nail polish";
 salesTax = 0.06;
-itemDiscounted = originalPrice * discountPercent;
-taxedItem = salesTax * original price;
-priceOFItemTax = originalPrice * salesTaxPercent;
+itemDiscount =  originalPrice * discountPercent;
+taxedItem = salesTax * itemAfterDiscount;
+priceItemTax = originalPrice + salesT;
+itemAfterDiscount = originalPrice - itemDiscount;
+result = "Your " + item  +" was originally $" + originalPrice +", but after a " + discountPercent +  "% discount, it is now $" + itemAfterDiscount + " without tax, and $" + priceItemTax  + " with tax.”;
 
-
+//“Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
+console.log(result);
