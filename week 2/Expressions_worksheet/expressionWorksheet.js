@@ -75,7 +75,7 @@ var priceOFItemWithTax;
 var priceOFItemWithoutTax;
 
 originalPrice = 5;
-discountPercent = 10;
+discountPercent = 0.10;
 descriptionItem = "nail polish";
 salesTaxPercent = 0.06;
 priceOFItemWithTax = originalPrice * salesTaxPercent;
