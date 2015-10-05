@@ -77,7 +77,7 @@ var itemAfterDiscount;
 var result;
 
 originalPrice = 5;
-discountPercent = 10;
+discountPercent = .10;
 item = "shoes";
 salesTax = 0.06;
 itemDiscount =  originalPrice * discountPercent;
@@ -85,6 +85,6 @@ itemAfterDiscount = originalPrice - itemDiscount;
 taxedItem = salesTax * itemAfterDiscount;
 priceItemTax = originalPrice + salesTax;
 
-result = "Your " + item + " was originally $" + originalPrice + " but after a " + discountPercent + "% discount, it is now $"
+result = "Your " + item + " was originally $" + originalPrice + " but after a " + discountPercent + "% discount, it is now $" + itemAfterDiscount +
 //“Your shoes was originally $5, but after a 10% discount, it is now $X without tax, and $X with tax.”
 console.log(result);
