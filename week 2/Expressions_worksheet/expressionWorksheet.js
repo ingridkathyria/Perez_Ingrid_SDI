@@ -50,7 +50,7 @@ console.log("Sparky got " + sparkySlices + " slices of pizza.");
 /*
 // Create an expression that will use the items in the array to calculate the average amount spent on groceries.
 
-var weeklyTotals;//declared variable
+
 var totalSpent;//declared variable
 var averageWeekly;//declared variable
 var result;
