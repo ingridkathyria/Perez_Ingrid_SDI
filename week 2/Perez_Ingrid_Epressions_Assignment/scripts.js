@@ -28,3 +28,7 @@ yourBMI = yourBMIWeight / yourBMIInches;
 
 console.log("According to your height and weight, your total BMI is " + yourBMI+ ".");
 console.log("To reach your goal you of " + myGoal + " you need to lose " + poundsTOLose + " pounds." );
+//Tested the code with 3 different inputs and had the correct results. First test entered 5 feet, 6 inches, 212 pounds
+// and goal of 140 pounds.
+//Received output  According to your height and weight, your total BMI is 34.2139577594123.
+//To reach your goal you of 140 you need to lose 72 pounds.
