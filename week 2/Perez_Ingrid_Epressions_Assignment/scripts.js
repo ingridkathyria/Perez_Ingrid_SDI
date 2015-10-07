@@ -22,12 +22,12 @@ myGoal = prompt ("What is your weight goal?");//assigned variable
 feetTOInches = Number(myHeightFeet) * 12;//calculates feet to inches
 heightInches = Number(feetTOInches) + Number(myHeightIn);//calculates total inches
 poundsTOLose = Number(myWeight) - Number(myGoal);//calculates pounds to lose
-yourBMIWeight = Number(myWeight) * 703;
+yourBMIWeight = Number(myWeight) * 703;//calculating BMI
 yourBMIInches = Number(heightInches) * Number(heightInches);//calculates BMI
-yourBMI = yourBMIWeight / yourBMIInches;
+yourBMI = yourBMIWeight / yourBMIInches;//Formula for BMI calculation
 
-console.log("According to your height and weight, your total BMI is " + yourBMI+ ".");
-console.log("To reach your goal you of " + myGoal + " you need to lose " + poundsTOLose + " pounds." );
+console.log("According to your height and weight, your total BMI is " + yourBMI+ ".");//First output for BMI calculation
+console.log("To reach your goal you of " + myGoal + " you need to lose " + poundsTOLose + " pounds." );//Output for the weight goal
 //Tested the code with 3 different inputs and had the correct results. First test entered 5 feet, 6 inches, 212 pounds
 // and goal of 140 pounds.
 //Received output  According to your height and weight, your total BMI is 34.2139577594123.
