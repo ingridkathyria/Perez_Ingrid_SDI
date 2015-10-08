@@ -7,13 +7,11 @@
 
 var myHeightFeet;//declared variables
 var myHeightIn;//declared variables
-var myWeight = [myCurrentWeight, myGoal];//declared variables
 var heightInches;//declared variables
 var myGoal;//declared variables
 var feetTOInches;//declared variables
-var heightInches;//declared variables
 var poundsTOLose;//declared variables
-
+var myWeight = [];//declared array for weight
 
 myHeightFeet = prompt ("How tall are you? Enter feet:");//assigned variable, user inputs feet
 myHeightIn = prompt ("Enter inches:");//assigned variable, user inputs inches
@@ -21,8 +19,8 @@ myWeight [0] = prompt ("Enter your weight:");//assigned variable
 myWeight [1] = prompt ("What is your weight goal?");//assigned variable, user goal to reach in weight
 feetTOInches = Number(myHeightFeet) * 12;//calculates feet to inches
 heightInches = Number(feetTOInches) + Number(myHeightIn);//calculates total inches
-poundsTOLose = Number(myWeight [0]) - Number(myGoal[1]);//calculates pounds to lose
-yourBMIWeight = Number(myCurrentWeight) * 703;//calculating BMI, part of the formula for calculating BMI
+poundsTOLose = Number(myWeight [0]) - Number(myWeight[1]);//calculates pounds to lose
+yourBMIWeight = Number(myWeight [0]) * 703;//calculating BMI, part of the formula for calculating BMI
 yourBMIInches = Number(heightInches) * Number(heightInches);//calculates BMI, part of the formula for calculating BMI
 yourBMI = yourBMIWeight / yourBMIInches;//final formula for BMI calculation
 
