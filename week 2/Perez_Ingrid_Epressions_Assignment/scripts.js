@@ -7,7 +7,7 @@
 
 var myHeightFeet;//declared variables
 var myHeightIn;//declared variables
-var myWeight;//declared variables
+var myWeight = [myCurrentWeight, myGoal];//declared variables
 var heightInches;//declared variables
 var myGoal;//declared variables
 var feetTOInches;//declared variables
@@ -15,16 +15,16 @@ var heightInches;//declared variables
 var poundsTOLose;//declared variables
 
 
-myHeightFeet = prompt ("How tall are you? Enter feet:");//assigned variable
-myHeightIn = prompt ("Enter inches:");//assigned variable
-myWeight = prompt ("Enter your weight:");//assigned variable
-myGoal = prompt ("What is your weight goal?");//assigned variable
+myHeightFeet = prompt ("How tall are you? Enter feet:");//assigned variable, user inputs feet
+myHeightIn = prompt ("Enter inches:");//assigned variable, user inputs inches
+myWeight [0] = prompt ("Enter your weight:");//assigned variable
+myWeight [1] = prompt ("What is your weight goal?");//assigned variable, user goal to reach in weight
 feetTOInches = Number(myHeightFeet) * 12;//calculates feet to inches
 heightInches = Number(feetTOInches) + Number(myHeightIn);//calculates total inches
-poundsTOLose = Number(myWeight) - Number(myGoal);//calculates pounds to lose
-yourBMIWeight = Number(myWeight) * 703;//calculating BMI
-yourBMIInches = Number(heightInches) * Number(heightInches);//calculates BMI
-yourBMI = yourBMIWeight / yourBMIInches;//Formula for BMI calculation
+poundsTOLose = Number(myWeight [0]) - Number(myGoal[1]);//calculates pounds to lose
+yourBMIWeight = Number(myCurrentWeight) * 703;//calculating BMI, part of the formula for calculating BMI
+yourBMIInches = Number(heightInches) * Number(heightInches);//calculates BMI, part of the formula for calculating BMI
+yourBMI = yourBMIWeight / yourBMIInches;//final formula for BMI calculation
 
 console.log("According to your height and weight, your total BMI is " + yourBMI+ ".");//First output for BMI calculation
 console.log("To reach your goal you of " + myGoal + " you need to lose " + poundsTOLose + " pounds." );//Output for the weight goal
