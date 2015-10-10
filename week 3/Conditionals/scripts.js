@@ -33,3 +33,10 @@ if(paycheck>300){
     console.log("We can buy the phone!")
 }
 */
+
+VAR GPA = 48
+//if gpa is over 2.0 you can graduate
+if(gpa >2.0){
+    console.log("You can graduate!");
+
+}
