@@ -19,7 +19,7 @@ if(kidHeight > 48){
     //code performed if condition is true
     console.log("You can ride the coaster!")
 }
-    */
+
 /*
 var budget = 300;
 var iPhonePrice = 199.99;
@@ -34,9 +34,17 @@ if(paycheck>300){
 }
 */
 
-VAR GPA = 48
+/*VAR GPA = 48
 //if gpa is over 2.0 you can graduate
 if(gpa >2.0){
     console.log("You can graduate!");
 
+}
+*/
+/*
+var gpa;
+var gpa = 48;
+
+if(gpa > 2.0){
+    console.log("You can graduate!");
 }
