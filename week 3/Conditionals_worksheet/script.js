@@ -16,25 +16,18 @@ var tankCapacity;
 var gallonsNeeded;
 
 //Gas efficiency of the car (in mpg)
-carEfficiency = 30 mpg;
+carEfficiency = 30 ;
 //Gauge reading of the gas tank (in %)
-gaugeReading = 7 gallons;
+gaugeReading = 7 ;
 //Car’s gas tank capacity (in gallons)
-tankCapacity = 12 gallons;
+tankCapacity = 12;
 //Gallons needed to cross the desert
-gallonsNeeded = 200 / 30
+gallonsNeeded = 200 / 30;
 
-if(gaugeReading > gallonsNeeded){
+//Comparing the gauge reading on the tank with the gallons needed to cross the desert
+if(gaugeReading >= gallonsNeeded){
     console.log("Yes, you can make it without stopping for gas!")
-}
-
-
-
-
-
-
-
-
+}else{console.log("You only have" + gaugeReading + "gallons of gas in your tank, better get gas now while you can!")};
 
 //“Yes, you can make it without stopping for gas!”
 // or “You only have X gallons of gas in your tank, better get gas now while you can!”
