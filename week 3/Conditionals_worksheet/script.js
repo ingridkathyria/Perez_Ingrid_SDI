@@ -5,15 +5,15 @@
 
 
 
-
+/*
 //A driver has to determine if they can make it across the desert with their current fuel.
 // They are about to pass the last gas station for the next 200 miles,
 // and they need to determine whether they should stop now for gas or not.
 
-var carEfficiency;
-var gaugeReading;
-var tankCapacity;
-var gallonsNeeded;
+var carEfficiency;//declared variable
+var gaugeReading;//declared variable
+var tankCapacity;//declared variable
+var gallonsNeeded;//declared variable
 
 //Gas efficiency of the car (in mpg)
 carEfficiency = 30 ;
@@ -31,3 +31,32 @@ if(gaugeReading >= gallonsNeeded){
 
 //“Yes, you can make it without stopping for gas!”
 // or “You only have X gallons of gas in your tank, better get gas now while you can!”
+*/
+
+//Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that
+// should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
+
+var usernameEntered;//declared variable
+var passwordEntered;//declared variable
+var correctUsername;//declared variable
+var correctPassword;//declared variable
+
+
+//Username entered by user
+usernameEntered = Nickname;
+//Password entered by user
+passwordEntered = password;
+//Correct username
+correctUsername = Nickname;
+//Correct password
+correctPassword = birthday;
+
+if(usernameEntered == correctUsername && passwordEntered == correctPassword){
+    console.log("Welcome, Nickname!")
+}else{console.log("User not found.")}
+
+
+
+//“Welcome, (place their username here)!”  - if the username and password is correct
+//“User not found. Try again.” -if the username does not match
+//“Password does not match our records.”  -if the username matches but the password does not
