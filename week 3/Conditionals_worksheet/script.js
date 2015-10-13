@@ -61,3 +61,23 @@ if(usernameEntered == correctUsername && passwordEntered == correctPassword){
 //“User not found. Try again.” -if the username does not match
 //“Password does not match our records.”  -if the username matches but the password does not
 */
+
+//The local movie theater in town has a ticket price of $12.00 but if you are a senior (55 and older), under 10 you get
+// the discounted price of $7.00. In addition, if a customer is seeing a movie between 3pm and 5pm they can also get the discounted price.
+//Determine which of the two prices the customer is eligible for.
+
+//Time of Movie (Assume whole numbers here)
+var movieTime;
+// Age of the customer
+var customerAge;
+//discount price for seniors 55 old and up and movies between 3pm and 5pm
+var discounts;
+
+
+movieTime = Number(4);
+customerAge = Number(35);
+discounts = ("$7.00")
+
+if(movieTime > 5 && movieTime < 3 ! customerAge < 55){
+    console.log("Ticket price is "+  +".")
+}
