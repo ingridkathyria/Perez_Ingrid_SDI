@@ -72,12 +72,16 @@ var movieTime;
 var customerAge;
 //discount price for seniors 55 old and up and movies between 3pm and 5pm
 var discounts;
+//Regular ticket price
+var regularTicket;
 
+movieTime = 4;
+customerAge = 35;
+discounts = 7;
+regularTicket = 12;
 
-movieTime = Number(4);
-customerAge = Number(35);
-discounts = ("$7.00")
-
-if(movieTime > 5 && movieTime < 3 ! customerAge < 55){
-    console.log("Ticket price is "+  +".")
+if(movieTime <= 5 && movieTime >= 3 || customerAge <= 10 || customerAge >= 55){
+    console.log("Ticket price is $"+ discounts +".");
+}else{
+    console.log("Ticket price is $"+ regularTicket + ".");
 }
