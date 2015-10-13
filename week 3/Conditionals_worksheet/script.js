@@ -35,7 +35,7 @@ if(gaugeReading >= gallonsNeeded){
 
 //Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that
 // should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
-
+/*
 var usernameEntered;//declared variable
 var passwordEntered;//declared variable
 var correctUsername;//declared variable
@@ -43,13 +43,13 @@ var correctPassword;//declared variable
 
 
 //Username entered by user
-usernameEntered = Nickname;
+usernameEntered = ("Nickname");
 //Password entered by user
-passwordEntered = password;
+passwordEntered = ("password");
 //Correct username
-correctUsername = Nickname;
+correctUsername = ("Nickname");
 //Correct password
-correctPassword = birthday;
+correctPassword = ("birthday");
 
 if(usernameEntered == correctUsername && passwordEntered == correctPassword){
     console.log("Welcome, Nickname!")
@@ -60,3 +60,4 @@ if(usernameEntered == correctUsername && passwordEntered == correctPassword){
 //“Welcome, (place their username here)!”  - if the username and password is correct
 //“User not found. Try again.” -if the username does not match
 //“Password does not match our records.”  -if the username matches but the password does not
+*/
