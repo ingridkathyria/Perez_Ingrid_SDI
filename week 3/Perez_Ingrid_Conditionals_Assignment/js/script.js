@@ -16,38 +16,36 @@ var totalTax;//declared variable
 
 
 billAmount = prompt("What is the bill amount?"); //total amount for the bill
-
-if(billAmount === " " && billAmount !== Number("")){
+//if user inputs the wrong data type
+if(billAmount === ""){
     billAmount = prompt("That is not a number! \nPlease enter a number!");
-    console.log("This is the amount due.");
 }else{
     console.log("Tip and tax is not included.");
 }
 
-billAmount = Number(billAmount);
+billAmount = Number(billAmount);//variable is number
 
 tipPercent = prompt("What percentage would you like to tip?");//percent tip to add to bill
-
-if(tipPercent === " " || tipPercent !== Number ("")){
-   tipPercent =  prompt("That is not a number! \nPlease enter a number!");
+//if user inputs the wrong data type
+if(tipPercent === ""){
+   tipPercent = prompt("That is not a number! \nPlease enter a number!");
     console.log("Tip according to service.");
 }else{
     console.log("Tip will be added to the bill.");
 }
 
-tipPercent = Number(tipPercent);
+tipPercent = Number(tipPercent);//variable is number
 
 taxPercent = prompt("What is the tax percent in your area?");//tax percent in the area
-if(taxPercent === " " || taxPercent !== Number("")){
-   taxPercent =  prompt("Please enter a valid number.");
+//if user inputs the wrong data type
+if(taxPercent === ""){
+   taxPercent = prompt("That is not a number! \nPlease enter a number!");
     console.log("Tax according to county.")
 }else{
     console.log("Tax will be added to the bill.");
 }
-taxPercent = Number(taxPercent);
 
-
-taxPercent = Number(taxPercent);
+taxPercent = Number(taxPercent);//variable is number
 totalTip   = tipPercent / 100;//turns into percent
 tipAmount  = totalTip * billAmount;//calculate the tip
 billTax    = taxPercent/100;//turns into percent
@@ -56,7 +54,7 @@ totalBill  = billAmount + tipAmount + totalTax;//adds bill with the tip and tax
 
 
 
-
+//output if user tips 0 to 10 percent
 if(tipPercent >= 0 && tipPercent <= 10 ){
     console.log("Your total bill with tip and tax is "+ totalBill+". ");
 }else{
