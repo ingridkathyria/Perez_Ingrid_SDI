@@ -15,7 +15,7 @@ var tipPercent;//declared variable
 var totalTax;//declared variable
 
 
-billAmount = prompt("What is the bill amount?"); //total amount for the bill
+billAmount = prompt("What is the bill amount?"); //assigned variable for total amount for the bill
 //if user inputs the wrong data type
 if(billAmount === ""){
     billAmount = prompt("That is not a number! \nPlease enter a number!");
@@ -25,8 +25,8 @@ if(billAmount === ""){
 
 billAmount = Number(billAmount);//variable is number
 
-tipPercent = prompt("What percentage would you like to tip?");//percent tip to add to bill
-//if user inputs the wrong data type
+tipPercent = prompt("What percentage would you like to tip?");//assigned variable for percent tip to add to bill
+//if user inputs the wrong data type a prompt will show up
 if(tipPercent === ""){
    tipPercent = prompt("That is not a number! \nPlease enter a number!");
     console.log("Tip according to service.");
@@ -37,7 +37,7 @@ if(tipPercent === ""){
 tipPercent = Number(tipPercent);//variable is number
 
 taxPercent = prompt("What is the tax percent in your area?");//tax percent in the area
-//if user inputs the wrong data type
+//if user inputs the wrong data type a prompt will show up
 if(taxPercent === ""){
    taxPercent = prompt("That is not a number! \nPlease enter a number!");
     console.log("Tax according to county.")
@@ -45,11 +45,11 @@ if(taxPercent === ""){
     console.log("Tax will be added to the bill.");
 }
 
-taxPercent = Number(taxPercent);//variable is number
-totalTip   = tipPercent / 100;//turns into percent
+taxPercent = Number(taxPercent);//variable should be a  number
+totalTip   = tipPercent / 100;//turns the number into percent
 tipAmount  = totalTip * billAmount;//calculate the tip
-billTax    = taxPercent/100;//turns into percent
-totalTax   = billTax * billAmount;//calculate the tax
+billTax    = taxPercent/100;//turns number into percent
+totalTax   = billTax * billAmount;//calculates the tax
 totalBill  = billAmount + tipAmount + totalTax;//adds bill with the tip and tax
 
 
