@@ -3,7 +3,7 @@
 //Functions Assignment
 
 //variables
-var pickLotto = prompt("Would you like to play the Lotto or Powerball?");//asking if user would like to play the Lotto or Powerball
+var pickLotto = prompt("Would you like to play the Lotto or Powerball? \nPlease type lotto or type powerball.");//asking if user would like to play the Lotto or Powerball
 var randomLotto;//declared variables
 var randomPowerbNum;//declared variables
 var randomSingleBall;//declared variables
