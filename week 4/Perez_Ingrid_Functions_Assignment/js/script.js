@@ -9,57 +9,42 @@ var randomPowerbNum;//declared variables
 var randomSingleBall;//declared variables
 var timesClicked = 1;//assigned value for times clicked
 
+randomLotto = randomNumGen(1,53,6);
+randomPowerbNum = randomNumGen(1,59,5);
+randomSingleBall = randomNumGen(1,35,1);
+
 
 //loop for timesClicked when user inputs = ""
-while(pickLotto === ""){//
+while(pickLotto === ""){
     prompt("Please enter a valid response. Would you like to play Lotto or Powerball?");//response when user inputs ""
 timesClicked++;
     if(timesClicked === 3){
-        console.log("I am not playing your games!");
-        break;
+        console.log("I am not playing your games!");//output when input = ""
+        break;//breaks the loop
     }
 }
 
-//Functions
-function lottoNumbers(){
-    var lotto = [];
-for(i = 0; i < 6; i++) {
-     lotto[i] = Math.random() * (53 - 1) + 1;
-    lotto[i] = Math.round(lotto[i]);
-   
-}
-    return lotto;
+//Function
+function randomNumGen(min,max,num){//function to create an array of random numbers
+    var randomArray = [];
+    var randomNum;//declaring array
+    for(var i = 0; i < num; i++) {
+     randomNum = Math.random() * (max - min) + min;//chooses random numbers
+    randomArray[i] = Math.round(randomNum);//rounds the numbers
 
 }
-
-function powerballNumbers(){
-    var powerball = [];
-    for(i=0; i< 5; i++) {
-        powerball[i] = Math.random() * (59 - 1) + 1;
-        powerball[i] = Math.round(powerball[i]);
-    }
-    return powerball;
-
-}
-function singlePowerball(){
-    var singlePowerb = Math.random() * (35 - 1) + 1;
-    singlePowerb = Math.round(singlePowerb);
-    return singlePowerb;
+    return randomArray;//return output for the function
 
 }
 
-randomLotto = lottoNumbers(53, 1);
-randomPowerbNum = powerballNumbers(59, 1);
-randomSingleBall = singlePowerball(35, 1);
 
-
-
+//if/else for outputs
 if(pickLotto === ""){
     console.log("You are the weakest link, Goodbye!")
-}else {
+}else{
     if (pickLotto === "powerball") {
         console.log(" Your powerball numbers are " + randomPowerbNum + " and your powerball is " + randomSingleBall + ".");
-    }else {
+    }else{
         (pickLotto === "lotto")
         {
             console.log("Your lotto numbers are " + randomLotto + ".")
