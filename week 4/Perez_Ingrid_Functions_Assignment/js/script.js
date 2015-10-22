@@ -9,6 +9,7 @@ var randomPowerbNum;//declared variables
 var randomSingleBall;//declared variables
 var timesClicked = 1;//assigned value for times clicked
 
+//arguments and parameters in use
 randomLotto = randomNumGen(1,53,6);
 randomPowerbNum = randomNumGen(1,59,5);
 randomSingleBall = randomNumGen(1,35,1);
