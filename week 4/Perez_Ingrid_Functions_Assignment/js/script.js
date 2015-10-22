@@ -29,12 +29,19 @@ timesClicked++;//timesclicked plus
 function randomNumGen(min,max,num){//function to create an array of random numbers
     var randomArray = [];
     var randomNum;//declaring array
+
     for(var i = 0; i < num; i++) {//for generating random numbers
 
-     randomNum = Math.random() * (max - min) + min;//chooses random numbers
+     randomNum = Math.floor(Math.random() * (max - min) + min);//chooses random numbers
     randomArray[i] = Math.round(randomNum);//rounds the numbers
 
-}
+} if(randomArray == this.lastSelected) {
+        generateNumber();
+    }
+    else {
+        this.lastSelected = randomArray;
+
+    }
     return randomArray;//return output for the function
 }
 
