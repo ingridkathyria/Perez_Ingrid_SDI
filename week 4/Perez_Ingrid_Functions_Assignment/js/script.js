@@ -35,11 +35,11 @@ function randomNumGen(min,max,num){//function to create an array of random numbe
      randomNum = Math.floor(Math.random() * (max - min) + min);//chooses random numbers
     randomArray[i] = Math.round(randomNum);//rounds the numbers
 
-} if(randomArray == this.lastSelected) {
-        generateNumber();
+} if(randomArray == this.lastSelected) {// condition for numbers not to repeat
+        generateNumber();//if numbers repeat
     }
     else {
-        this.lastSelected = randomArray;
+        this.lastSelected = randomArray;//if numbers dot repeat
 
     }
     return randomArray;//return output for the function
